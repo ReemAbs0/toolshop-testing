@@ -4,3 +4,4 @@ export const products = [
     { name: 'Pliers', url: '(//div[@class="card-footer"])[2]' },
     { name: 'Bolt Cutters', url: '(//div[@class="card-footer"])[3]' }
 ];
+
