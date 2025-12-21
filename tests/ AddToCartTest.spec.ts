@@ -18,7 +18,6 @@ test.describe('Adding To cart', () => {
             await page.locator(product.url).click();
             await cart.addProductToCart();
             await cart.goToCheckout(process.env.BASE_URL!);
-            await page.goto(process.env.BASE_URL!);
 
         });
     }
