@@ -1,3 +1,4 @@
+
 import { Page, expect } from '@playwright/test';
 
 export class CartPOM {
@@ -12,6 +13,12 @@ export class CartPOM {
     await expect(this.page).toHaveURL(/\/checkout/);
   }
 
+  async addProductToCart() {
+    await this.page.locator('[data-test="add-to-cart"]').click();
+  }
+
+
+
   async removeProduct(name: string) {
     const row = this.page.locator('tr', { hasText: name });
     await expect(row).toBeVisible({ timeout: 10000 });
@@ -24,3 +31,4 @@ export class CartPOM {
     ).toBeVisible({ timeout: 10000 });
   }
 }
+
