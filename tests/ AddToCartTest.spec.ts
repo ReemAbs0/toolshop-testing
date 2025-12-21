@@ -15,13 +15,9 @@ test.describe('Adding To cart', () => {
 
         test('Add to Cart Test for ' + product.name, async ({ page }) => {
 
-            await page.goto(process.env.BASE_URL!);
-
             await page.locator(product.url).click();
-
             await cart.addProductToCart();
             await cart.goToCheckout(process.env.BASE_URL!);
-
             await page.goto(process.env.BASE_URL!);
 
         });
