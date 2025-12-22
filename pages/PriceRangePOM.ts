@@ -32,8 +32,7 @@ export class PriceRangePOM {
     const min = Number(await slider.getAttribute('aria-valuemin'));
     const max = Number(await slider.getAttribute('aria-valuemax'));
 
-    // This is the version you said behaved better
-    const width = 200; // stable average width
+    const width = 200; 
     const offset = ((targetValue - current) / (max - min)) * width;
 
     await this.page.mouse.move(
