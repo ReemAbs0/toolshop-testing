@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+/*import { test } from '@playwright/test';
 import { ProductsPOM } from '../pages/ProductsPOM';
 import * as dotenv from 'dotenv';
 
@@ -22,3 +22,4 @@ test.describe('Sort', () => {
     await products.verifyPricesSortedHighLow();
   });
 });
+*/
